@@ -1,0 +1,46 @@
+1) Aspectos conceptuales:
+a) ¿Que ventajas tiene la utilización de funciones?
+* Reutilización de código: En lugar de por ejemplo, escribir un calculo en diferentes partes, solo llamas a la función cada vez que lo necesites.
+* Facilidad de mantenimiento: Solo cambias la linea dentro de la función y el cambio se aplica en todo el sistema.
+* Modularidad y legibilidad: Las funciones permiten dividir un problema complejo en piezas pequeñas y comprensibles.
+* Facilitan las pruebas (testing): Es mucho más sencillo probar si una pequeña función, funciona correctamente de forma aislada que intentar buscar un error en un programa de mil lineas.
+* Abstracción: El usuario de una función, no necesita saber como hace lo que hace, solo que datos necesita y que te va a devolver.
+b)¿Hay algún ciudado en el orden en el que se pasan los paramétros a una función?
+Si, el orden es crítico. Si cambias el orden de los datos que envias a una función podrias terminar con datos erroneos o, peor aún, un programa que deja de funcionar.
+c)¿Cuándo uso la sentencia return?
+La sentencia return es el punto final de una función. Es el momento en que la función deja de ejecutarse y entrega un resultado a quien lo llamo.
+Puedes usarlo también para escapar de la función si se cumple una condición, evitando que se ejecute el resto del código.
+d)¿Que diferencia hay entre la definición y la invocación de una función?
+En la definición creas la función, defines los parametros y escribes la lógica interna.
+En la invocación es cuando realmente le pides a la función que trabaje.
+e)¿Que son los paramétros formales y para que sirven?. Ejemplifique.
+Los paramétros formales son variables que pasas al momento de definir la función.
+Ejemplo:
+def Sumar(n1, n2):
+   return n1 + n2
+f)¿Que son los paramétros reales y para que sirven?. Ejemplifique.
+Los paramétros reales son los valores o datos que pasas al invocar una función.
+Ejemplo:
+print(Sumar(2, 4))
+g)¿Que significa el cuerpo de una función?. Ejemplifique.
+El cuerpo de una función es el bloque de código que contiene todas las instrucciones que se ejecutaran cuando la función sea invocada.
+Ejemplo:
+def calcularAreaTriangulo(base, altura): <--- esto es el encabezado 
+   resultado = (base*altura)/2 <--- esto es el cuerpo
+   return resultado <----esto es el fin, la instruccion que envia el resultado...
+h)¿Existen funciones sin paramétros o argumentos?
+Si existen, y son muy comunes y útiles. Se utilizan cuando la función no necesita información externa para realizar su trabajo, ya sea porque tiene una tarea fija o porque obtiene los datos de otra fuente.
+Aunque incluso si no hay paramétros, los parentesis son obligatorios, tanto en la definición como en la invocación.
+i)¿Puedes usar una letra o un número como paramétro formal?. ¿Y como paramétro real?
+Como paramétro formal puedes usar una letra pero no un número. Porque el paramétro es una variable, y un número es un valor constante.
+El paramétro formal es un "contenedor" o "etiqueta", si pones un número el programa se confunde.
+Como paramétro real si puedes utilizar una letra o número.
+j)¿Puedo tener una cantidad distinta de paramétros formales que reales en una función?
+La regla es que debes pasar tantos paramétros reales como formales esten definidos en la función. Aunque existen excepciones.
+k)¿Cómo se puede implementar un módulo con solo definiciones de funciones e importarlo desde tu programa?¿Cuales son las formas de importar que ofrece Python?
+* Creas un archivo con extensión py (archivo.py) y defines las funciones.
+*En otro archivo (instancias.py) from archivo import funcion 
+*Si es en el mismo archivo donde se encuentra el modulo y las funciones: Modulo.funcion()
+l)¿Qué diferencia hay entre los siguientes códigos?
+i)Import math <---- Traes todas las herramientas (funciones). Para usar una tienes que especificar cual. Ejemplo: math.sqrt(16).
+ii)from math import sqrt <---Sacas una herramienta especifica de la caja, la llamas directamente. Ejemplo: sqrt(16).
