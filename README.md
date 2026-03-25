@@ -1,7 +1,7 @@
 Practica 1 - Programación Avanzada - UNaB
 Este repositorio documenta mi progreso en la materia, aplicando conceptos de Modularización y Programación Orientada a Objetos en Pythom.
         
-***Conceptos técnicos Aplicados:
+### Conceptos técnicos Aplicados:
 * Modularización: Organización de código en multiples archivos y uso de import para reutilizar lógica en diferentes partes del proyecto.
 * Invocación dinámica: Manejo preciso de llamadas a funciones y flujo de ejecución.
 * Refactorización de clases: Transformación de funciones procedimentales a Clases, estructurando mejor los datos y el comportamiento.
